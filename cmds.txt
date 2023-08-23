@@ -1,0 +1,7 @@
+go get -u github.com/gin-gonic/gin
+make build
+make deploy_prod
+go get github.com/aws/aws-lambda-go
+go get github.com/awslabs/aws-lambda-go-api-proxy
+go get github.com/aws/aws-lambda-go/events
+curl.exe {Your API URL}/prod/ping
